@@ -1,1 +1,6 @@
 /target
+**/target/
+*.so
+*-keypair.json
+challenges/*/*/Cargo.lock
+.DS_Store

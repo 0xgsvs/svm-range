@@ -1,0 +1,28 @@
+[package]
+name = "svm-range"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "A small vulnerable Solana program range with exploits, patches, and write-ups"
+
+[lib]
+name = "svm_range"
+
+[[bin]]
+name = "svm-range"
+path = "src/bin/svm-range.rs"
+
+[dependencies]
+litesvm.workspace = true
+solana-account.workspace = true
+solana-address.workspace = true
+solana-instruction.workspace = true
+solana-keypair.workspace = true
+solana-message.workspace = true
+solana-signer.workspace = true
+solana-system-interface.workspace = true
+solana-transaction.workspace = true
+solana-transaction-error.workspace = true
+thiserror.workspace = true
